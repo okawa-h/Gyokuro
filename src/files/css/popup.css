@@ -1,0 +1,45 @@
+@charset "UTF-8";
+#all {
+	width: 200px;
+}
+
+.wrap {
+	padding: 24px;
+}
+
+h1 {
+	margin-bottom: 24px;
+	font-size: 18px;
+	font-family: 'Roboto',arial,sans-serif;
+}
+
+h1 span {
+	display: block;
+	color: #ff8a65;
+	font-size: 12px;
+}
+
+#submit {
+	display: block;
+	padding: 0 16px;
+	border: none;
+	border-radius: 2px;
+	background-color: #66bb6a;
+	outline: none;
+	color: #fff;
+	font-size: 13px;
+	font-family: 'Roboto',arial,sans-serif;
+	line-height: 36px;
+	appearance: none;
+	text-align: center;
+	cursor: pointer;
+	transition: box-shadow .2s ease-in-out;
+}
+
+iframe {
+	/*display: none;*/
+}
+
+#submit:hover {
+	box-shadow: 0 5px 10px rgba(0,0,0,.15);
+}

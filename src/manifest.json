@@ -1,0 +1,33 @@
+{
+	"manifest_version": 2,
+	"name"       : "玉露",
+	"description": "日本茶の一種。製造法上の分類としては煎茶の一種であるが、栽培方法に特徴がある。",
+	"version"    : "0.1",
+	"icons"      : {
+		"16" : "files/img/icon/icon.png",
+		"48" : "files/img/icon/icon.png",
+		"128": "files/img/icon/icon.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"19": "files/img/icon/icon.png",
+			"38": "files/img/icon/icon.png"
+		},
+		"default_title": "玉露茶",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*","https://*/*"],
+			"js"     : ["files/js/jquery.js","files/js/content.js"],
+			"run_at" : "document_start"
+		}
+	],
+	"permissions": [
+		"http://192.168.0.39:8888/api/gyokuro/index.php",
+		"http://192.168.0.68:8888/tokyo/Gyokuro/src/files/php/index.php"
+	],
+	"web_accessible_resources": [
+		"files/img/icon/alert.png"
+	]
+}
